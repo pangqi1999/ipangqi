@@ -1,0 +1,59 @@
+.circle-check input {
+    width: 1.64rem;
+    height: 1.64rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 0px 0px 5px;
+    outline: none;
+    -webkit-appearance: none;
+  
+    vertical-align: middle;
+  }
+  /* 当inpu type=checkbox 被选中时候的样式 */
+  .circle-check input:checked {
+    background-color: #409eff;
+  }
+  /* checkbox 选中时候 在添加伪类 */
+  .circle-check input:checked::after {
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .square-check input {
+    width: 1.64rem;
+    height: 1.64rem;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 0px 0px 0px 5px;
+    outline: none;
+    -webkit-appearance: none;
+  
+    vertical-align: middle;
+  }
+  
+  /* 当inpu type=checkbox 被选中时候的样式 */
+  .square-check input:checked {
+    background-color: #409eff;
+  }
+  /* checkbox 选中时候 在添加伪类 */
+  .square-check input:checked::after {
+    content: "";
+    color: #fff;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

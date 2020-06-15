@@ -1,0 +1,165 @@
+
+/* 表单 */
+.form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .form-label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 5px;
+  }
+  /* 为什么这么写 */
+  input[type="text"].form-control {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+  }
+  input[type="password"].form-control {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+  }
+  
+  input[type="text"]:focus.form-control {
+    outline: none;
+    border-color: #409eff;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  input[type="password"]:focus.form-control {
+    outline: none;
+    border-color: #409eff;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .has-feedback {
+    position: relative;
+  }
+  .has-feedback-suffix input[type="text"].form-control {
+    padding-right: 42px;
+  }
+  .has-feedback-suffix input[type="password"].form-control {
+    padding-right: 42px;
+  }
+  
+  /* input 中的 字体图标 */
+  .has-feedback-suffix .form-control-feedback {
+    position: absolute;
+    height: 100%;
+    right: 11px;
+    /* top: 50%; */
+    top: 10px;
+    /* width: 42px; */
+    font-size: 20px;
+    /* transform: translate(0%,-50%); */
+    text-align: center;
+    color: #c0c4cc;
+    transition: all 0.3s;
+    pointer-events: none;
+    /* line-height: none; */
+  
+    /* 问题：如何保证有行高情况下 让脱离文档流元素实现 上下居中? */
+  }
+  
+  .has-feedback-prefix input[type="text"].form-control {
+    padding-left: 42px;
+  }
+  .has-feedback-prefix input[type="password"].form-control {
+    padding-left: 42px;
+  }
+  
+  /* input 中的 字体图标 */
+  .has-feedback-prefix .form-control-feedback {
+    position: absolute;
+    height: 100%;
+    left: 11px;
+    /* top: 50%; */
+    top: 10px;
+    /* width: 42px; */
+    font-size: 20px;
+    /* transform: translate(0%,-50%); */
+    text-align: center;
+    color: #c0c4cc;
+    transition: all 0.3s;
+    pointer-events: none;
+    /* line-height: none; */
+    /* 问题：如何保证有行高情况下 让脱离文档流元素实现 上下居中? */
+  }
+  
+  .form-group-perend {
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+  }
+  
+  .input-prepend {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .form-group-prepend .input-prepend {
+    background-color: #f5f7fa;
+    color: #909399;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap;
+  }
+  
+  .form-group-perend input[type="text"].form-control {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  /* 横向表单 */
+  .form-inline {
+    width: 100%;
+  
+     
+  }
+  .form-inline .form-group {
+    display: inline-block;
+    width: auto;
+    margin: 10px 15px;
+  }
+  .form-inline input[type="text"].form-control {
+    width: auto;
+  }
+  
+  .form-inline input[type="password"].form-control {
+    width: auto;
+  }
+  

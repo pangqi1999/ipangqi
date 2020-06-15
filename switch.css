@@ -1,0 +1,55 @@
+/* 开关: 必须是input 标签 class = switch 才有效 */
+input[type="checkbox"].switch {
+    outline: none;
+    -webkit-appearance: none;
+    width: 3rem;
+    height: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: #ccc;
+    padding: 0.08rem;
+    position: relative;
+  }
+  input[type="checkbox"].switch::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0.08rem;
+    top: 0.08rem;
+    transition: all 0.5s;
+  }
+  
+  input[type="checkbox"].switch:checked {
+    background-color: #67c23a;
+  }
+  input[type="checkbox"].switch:checked::before {
+    /* float: right; */
+    transition: all 0.5s;
+    position: absolute;
+    left: 1.5rem;
+  }
+  
+  /* 状态 */
+  /* 
+  input 为checkbox 并且被选中 并且 class 中必为 .switch .switch-info 才有以下样式
+  条件选择器 且关系
+  */
+  input[type="checkbox"]:checked.switch.switch-info {
+    background-color: #409eff;
+  }
+  input[type="checkbox"]:checked.switch.switch-danger {
+    background-color: rgb(255, 73, 73);
+  }
+  input[type="checkbox"]:checked.switch.switch-primary {
+    background-color: #409eff;
+  }
+  input[type="checkbox"].switch.switch-primary {
+    background-color: rgb(255, 73, 73);
+  }
+  input[type="checkbox"]:checked.switch.switch-warm {
+    background-color: hsl(51, 93%, 54%);
+  }

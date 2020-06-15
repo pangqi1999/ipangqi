@@ -1,0 +1,97 @@
+.table{
+    border-collapse: collapse;
+    border: 1px solid transparent;
+    width: 100%;
+    /* 允许宽度大于100% 不允许小于100% */
+    min-width: 100%;
+    text-align: center;
+}
+.table>thead>tr>th{
+    font-weight: bolder;
+    color:#909399;
+}
+
+.table>thead>tr,
+.table>tbody>tr{
+    width: 100%;
+    min-width: 100%;
+}
+
+.table>thead>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td{
+    border: 1px solid #e0e0e0;
+    border-left-color:transparent;
+    border-right-color: transparent;
+    
+    padding: 10px 0 10px 15px;
+}
+.table>tbody>tr>td{
+    color:#606263;
+}
+/* 斑马线 */
+.table-striped tbody>tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+/* 边框 */
+.table-border thead>tr>th,
+.table-border thead>tr>td,
+.table-border tbody>tr>td{
+    border:1px solid #e0e0e0
+}
+
+.table-hover > tbody > tr:hover > td{
+    background-color:#f0f9eb ;
+    border-bottom: 1px solid #f0f9eb !important;
+}
+
+/* 黑色系 */
+.table-server{
+    border-collapse: collapse;
+    border: 1px solid transparent;
+    width: 100%;
+    /* 允许宽度大于100% 不允许小于100% */
+    min-width: 100%;
+    text-align: center;
+}
+.table-server>thead>tr>th{
+    font-weight: bolder;
+    color:#28AAF7;
+}
+
+.table-server>thead>tr,
+.table-server>tbody>tr{
+   
+    background-color: #303242;
+   
+    width: 100%;
+    min-width: 100%;
+}
+
+.table-server>thead>tr>th,
+.table-server>thead>tr>td,
+.table-server>tbody>tr>td{
+    border: 1px solid #28AAF7;
+    border-left-color:transparent;
+    border-right-color: transparent;
+    
+    padding: 10px 0 10px 15px;
+}
+.table-server>tbody>tr>td{
+    color:#728AAF;
+}
+/* 斑马线 */
+.table-server-striped tbody>tr:nth-child(odd){
+    background-color: #2A2C3A;
+}
+/* 边框 */
+.table-server-border thead>tr>th,
+.table-server-border thead>tr>td,
+.table-server-border tbody>tr>td{
+    border:1px solid #e0e0e0
+}
+
+.table-server-hover > tbody > tr:hover > td{
+    background-color:#f0f9eb ;
+    border-bottom: 1px solid #f0f9eb !important;
+}
